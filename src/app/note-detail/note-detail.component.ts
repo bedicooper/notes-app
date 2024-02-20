@@ -15,4 +15,10 @@ export class NoteDetailComponent {
     activateRoute = inject(ActivatedRoute);
     id = Number(this.activateRoute.snapshot.paramMap.get('id'));
     note = NOTES.find((note) => note.id === this.id);
+
+    deleteNote() {
+        let index = NOTES.indexOf(this.note!, 0);
+        NOTES.splice(index, 1)
+        this.router.navigateByUrl('');
+    }
 };
