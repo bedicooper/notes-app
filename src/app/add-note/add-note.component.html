@@ -2,7 +2,7 @@
     <h2>
         New Note
     </h2>
-    <form [formGroup]="addNoteForm">
+    <form [formGroup]="addNoteForm" (ngSubmit)="addNote()">
         <div>
             <label for="note-title">
                 Title:
