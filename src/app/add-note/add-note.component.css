@@ -1,0 +1,30 @@
+.form__container{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    width: 100%;
+    max-width:400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    border-radius: 1em;
+    background-color: white;
+    padding: 1em;
+}
+
+.form__field {
+    display: grid;
+    grid-template-columns: 4em 1fr;
+    align-items: center;
+}
+
+.form__input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+}
