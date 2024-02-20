@@ -4,6 +4,11 @@
         <p>{{note.text}}</p>
     </div>
 }
+@if (!note) {
+    <div>
+        <p>Soory, a note with this id does not exist.</p>
+    </div>
+}
 <nav>
     <button routerLink="">Back to List</button>
 </nav>
