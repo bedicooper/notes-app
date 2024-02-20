@@ -1,3 +1,9 @@
-<div>
+@if (note) {
+    <div>
+        <span>{{note.title}}</span>
+        <p>{{note.text}}</p>
+    </div>
+}
+<nav>
     <button routerLink="">Back to List</button>
-</div>
+</nav>
