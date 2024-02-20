@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1d951;
+}
+
+.header__heading {
+    font-family: 'Merriweather';
+    font-weight: 900;
+    font-size: 2em;
+    margin: 1em 0;
+}
