@@ -1,18 +1,18 @@
-<div>
+<section class="section__body">
     <nav>
-        <button routerLink="./new">Add New Note</button>
+        <button class="section__button" routerLink="./new">+</button>
       </nav>
-    <ul>
+    <ul class="notes">
         @for (note of notes; track note.id) {
-        <li>
-            <button [routerLink]="['/note', note.id]">
-                <span>{{note.title}}</span>
-                <span>{{note.text}}</span>
+        <li class="notes__item">
+            <button class="notes__itemButton" [routerLink]="['/note', note.id]">
+                <h3 class="notes__title">{{note.title}}</h3>
+                <p class="notes__content">{{note.text}}</p>
             </button>
         </li>
         }
     </ul>
     @if (notes.length === 0) {
-        <p>Add Your first Note!</p>
+        <h2 class="section__heading">Add Your first Note!</h2>
     }
-</div>
+</section>
