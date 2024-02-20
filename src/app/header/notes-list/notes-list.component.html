@@ -1,1 +1,10 @@
-<p>notes list will go here</p>
+<div>
+    <ul>
+        @for (item of notes; track item.id) {
+        <li>
+            <span>{{item.title}}</span>
+            <span>{{item.text}}</span>
+        </li>
+        }
+    </ul>
+</div>
