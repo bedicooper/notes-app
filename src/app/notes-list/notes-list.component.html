@@ -3,10 +3,12 @@
         <button routerLink="./new">Add New Note</button>
       </nav>
     <ul>
-        @for (item of notes; track item.id) {
+        @for (note of notes; track note.id) {
         <li>
-            <span>{{item.title}}</span>
-            <span>{{item.text}}</span>
+            <button [routerLink]="['/note', note.id]">
+                <span>{{note.title}}</span>
+                <span>{{note.text}}</span>
+            </button>
         </li>
         }
     </ul>
