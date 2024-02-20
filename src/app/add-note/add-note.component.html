@@ -1,3 +1,22 @@
-<p>
-    soon, add new note here!
-</p>
+<div>
+    <h2>
+        New Note
+    </h2>
+    <form [formGroup]="addNoteForm">
+        <div>
+            <label for="note-title">
+                Title:
+                <input id="note-title" formControlName="title" />
+            </label>
+        </div>
+        <div>
+            <label for="note-text">
+                Text:
+                <input id="note-text" formControlName="text" />
+            </label>
+        </div>
+        <button type="button" type="submit" [disabled]="!addNoteForm.valid">
+            Add Note
+        </button>
+    </form>
+</div>
