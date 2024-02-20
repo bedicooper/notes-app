@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { NOTES } from "../../../notes";
+import { NOTES } from "../../notes";
 
 @Component({
     selector: 'app-notes-list',
