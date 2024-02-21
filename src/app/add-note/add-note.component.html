@@ -1,25 +1,27 @@
-<div>
+<article class="form__container">
     <h2>
         New Note
     </h2>
-    <form [formGroup]="addNoteForm" (ngSubmit)="addNote()">
-        <div>
+    <form class="form" [formGroup]="addNoteForm" (ngSubmit)="addNote()">
+        <div class="form__field">
             <label for="note-title">
                 Title:
-                <input id="note-title" formControlName="title" />
             </label>
+                <input class="form__input" id="note-title" formControlName="title" />
         </div>
-        <div>
+        <div class="form__field">
             <label for="note-text">
                 Text:
-                <input id="note-text" formControlName="text" />
             </label>
+                <textarea class="form__input" id="note-text" formControlName="text"></textarea>
         </div>
-        <button type="button" type="submit" [disabled]="!addNoteForm.valid">
-            Add Note
-        </button>
-        <button type="button" routerLink="">
-            Discard
-        </button>
+        <div class="form__buttons">
+            <button class="form__button form__button--addNote" type="button" type="submit" [disabled]="!addNoteForm.valid">
+                Add Note
+            </button>
+            <button class="form__button form__button--discard" type="button" routerLink="">
+                Discard
+            </button>
+        </div>
     </form>
-</div>
+</article>
