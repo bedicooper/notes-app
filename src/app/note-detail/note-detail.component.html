@@ -1,17 +1,19 @@
-@if (note) {
-    <div>
-        <span>{{note.title}}</span>
-        <p>{{note.text}}</p>
-        <button (click)="deleteNote()">
-            Delete Note
-        </button>
-    </div>
-}
-@if (!note) {
-    <div>
-        <p>Soory, a note with this id does not exist.</p>
-    </div>
-}
-<nav>
-    <button routerLink="">Back to List</button>
-</nav>
+<article class="note__container">
+    @if (note) {
+        <div class="note">
+            <h3 class="note__title">{{note.title}}</h3>
+            <p class="note__content">{{note.text}}</p>
+            <button class="note__delete" (click)="deleteNote()">
+                delete
+            </button>
+        </div>
+    }
+    @if (!note) {
+        <div>
+            <p>Sorry, a note with this id does not exist.</p>
+        </div>
+    }
+    <nav>
+        <button class="note__button" routerLink="">Back to List</button>
+    </nav>
+</article>

@@ -1,0 +1,57 @@
+.note__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: #fff;
+    margin-bottom: 2em;
+}
+
+.note__header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.note__title {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 0.5px solid gray;
+    text-align: left;
+    font-weight: 700;
+}
+
+.note__content {
+    line-height: 1.4;
+    text-align: left;
+    font-weight: 400;
+}
+
+.note__button {
+    border: none;
+    border-radius: 0.5em;
+    padding: 1em;
+    background-color: white;
+    cursor: pointer;
+}
+
+.note__delete {
+    border: none;
+    background: none;
+    padding: 0;
+    vertical-align: text-top;
+    color: grey;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+.note__delete:hover {
+    color: rgb(177, 0, 0);
+}
